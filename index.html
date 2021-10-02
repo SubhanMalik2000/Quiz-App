@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="design.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>Quiz App</title>
+</head>
+
+<body
+  style="background-color:rgba(52, 73, 94,1.0); ; background-repeat: no-repeat; background-size: cover; height: 100vh;">
+  <!-- container -->
+  
+
+    <h2 class="head">Quiz APP<span style='font-size:50px;'>&#x1F632;</span></h2>
+    <!-- progress Bar -->
+    <h2 style="color: wheat;">Your PerFormence <span style='font-size:50px;'>&#9998;</span></h2>
+
+    <div class="progress" style="height: 25px; width: 100%; position: relative;">
+      <div class="progress-bar bg-success" id="fixed" role="progressbar"
+        style=" width:70%; font-size: 12px; font-weight:bold;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        70% passing ratio
+        <div class="progress" style="width: 100%; position: absolute; opacity: .3;">
+          <div class="progress-bar bg-dark" id="success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+            aria-valuemax="100"></div>
+          <div class="progress-bar bg-warning" id="warning" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- progress Bar -->
+    <div id="mid" class="container-md">
+      <div class="demo">
+
+        <!-- Question -->
+        <header id="Question" style="background-color: rgba(149, 165, 166,1.0); line-height: 2rem;">Question</header>
+        <!-- Question -->
+
+        <!-- main -->
+        <div class="main">
+          <!-- option1 -->
+          <div class="form-check" style="background-color:rgba(236, 240, 241,1.0);">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+              checked>
+            <label class="form-check-label1" for="exampleRadios1">
+              Default radio
+            </label>
+          </div>
+          <!-- option1 -->
+
+          <!-- option2 -->
+          <div class="form-check" style="background-color:rgba(236, 240, 241,1.0);">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label2" for="exampleRadios2">
+              Second default radio
+            </label>
+          </div>
+          <!-- option2 -->
+
+          <!-- option3 -->
+          <div class="form-check" style="background-color:rgba(236, 240, 241,1.0);">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label3" for="exampleRadios3">
+              Second default radio
+            </label>
+          </div>
+          <!-- option3 -->
+
+          <!-- option4 -->
+          <div class="form-check" style="background-color:rgba(236, 240, 241,1.0);">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+            <label class="form-check-label4" for="exampleRadios4">
+              Second default radio
+            </label>
+          </div>
+          <!-- option4 -->
+
+          <!-- button -->
+          <button type="button" class="btn btn-secondary" id="btn">Submit</button>
+          <button type="button" class="btn btn-dark" id="king">Next</button>
+          <!-- button -->
+        </div>
+        <!-- scoring -->
+        <div class="container-sm" id="score">
+          <p class="plus"></p>
+          <button type="button" onclick="location.reload()" class="btn btn-dark" id="king"><i class="fas fa-reply">Play Again</i></button>
+        </div>
+        <!-- scoring -->
+      </div>
+      <!-- main -->
+    </div>
+  </div>
+  </div>
+
+  <!-- container -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="Quiz.js"></script>
+</body>
+
+</html>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
